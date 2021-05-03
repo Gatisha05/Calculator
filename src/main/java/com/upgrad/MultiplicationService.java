@@ -3,9 +3,10 @@ package com.upgrad;
 import org.springframework.stereotype.Component;
 
 @Component
-public class AdditionService implements MathService{
+public class MultiplicationService implements MathService{
+
     @Override
     public void operate(int x, int y) {
-        System.out.println("Addition is " + (x+y));
+        System.out.println("Multiplication is " + (x*y));
     }
 }
